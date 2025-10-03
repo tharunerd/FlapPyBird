@@ -1,39 +1,70 @@
-[FlapPyBird](https://sourabhv.github.io/FlapPyBird)
-===============
 
-A Flappy Bird Clone made using [python-pygame][pygame]
+# 🐦 FlapPyBird
 
-> If you are in interested in the old one-file code for the game, you can [find it here][one-file-game]
-
-[pygame]: http://www.pygame.org
-[one-file-game]: https://github.com/sourabhv/FlapPyBird/blob/038359dc6122f8d851e816ddb3e7d28229d585e5/flappy.py
+A polished clone of the classic **Flappy Bird** game built using Python and Pygame.  
+Fly the bird through pipes, rack up your score, and enjoy a retro arcade experience — all from your terminal!
 
 
-Setup (as tested on MacOS)
----------------------------
+## ⚙️ Setup Instructions
 
-1. Install Python 3 from [here](https://www.python.org/download/releases/) (or use brew/apt/pyenv)
+### ✅ Requirements
+- Python 3.7+
+- `pipenv` or `virtualenv` (recommended for dependency isolation)
 
-2. Run `make init` (this will install pip packages, use virtualenv or something similar if you don't want to install globally)
+### 💻 Installation
 
-3. Run `make` to run the game. Run `DEBUG=True make` to see rects and coords
+#### Option 1: Using `pipenv` (recommended)
+```bash
+pip install pipenv
+pipenv install
+pipenv run python main.py
+```
 
-4. Use <kbd>&uarr;</kbd> or <kbd>Space</kbd> key to play and <kbd>Esc</kbd> to close the game.
+#### Option 2: Manual Setup
+```bash
+pip install pygame
+python main.py
+```
 
-5. Optionally run `make web` to run the game in the browser (`pygbag`).
+---
 
-Notable forks
--------------
-- [FlapPyBlink Blink to control the bird](https://github.com/sero583/FlappyBlink)
-- [FlappyBird Fury Mode](https://github.com/Cc618/FlapPyBird)
-- [FlappyBird Model Predictive Control](https://github.com/philzook58/FlapPyBird-MPC)
-- [FlappyBird OpenFrameworks Port](https://github.com/TheLogicMaster/ofFlappyBird)
-- [FlappyBird On Quantum Computing](https://github.com/WingCode/QuFlapPyBird)
+## 🕹️ Controls
 
-Made something awesome from FlapPyBird? Add it to the list :)
+| Action        | Key         |
+|---------------|-------------|
+| Flap / Jump   | `Space` or `↑` |
+| Quit Game     | `Esc`       |
 
+---
 
-Demo
-----------
+## 🧪 Development & Debugging
 
-https://user-images.githubusercontent.com/2307626/130682424-9254b32d-efe0-406e-a6ea-3fb625a2df5e.mp4
+Use the following commands to enhance your development experience:
+
+```bash
+make init       # Install dependencies
+make            # Run the game
+DEBUG=True make # Run with debug overlays (rects, coords)
+make web        # Run in browser using pygbag (experimental)
+```
+
+---
+
+## 🚀 Notable Forks & Variants
+
+Explore creative adaptations of FlapPyBird:
+
+- FlapPyBlink – Blink to control the bird
+- Fury Mode – Intense gameplay
+- Model Predictive Control
+- OpenFrameworks Port
+- Quantum Version
+
+---
+
+## 🙌 Contribute
+
+Made something awesome with FlapPyBird?  
+Feel free to fork, enhance, and submit a pull request — or add your version to the list above!
+
+---
